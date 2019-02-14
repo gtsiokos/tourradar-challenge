@@ -1,0 +1,17 @@
+# npm modules
+node_modules
+
+# logs
+npm-debug.log
+firebase-debug.log
+
+# other
+.DS_Store
+
+# environment files
+.env
+.firebaserc
+.firebase/
+dist/index.html
+dist/bundle.js
+dist/bundle.js.map

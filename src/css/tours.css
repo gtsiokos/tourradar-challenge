@@ -1,0 +1,260 @@
+@value mobile: screen and (max-width: 599px);
+@value desktop: screen and (min-width: 600px);
+
+.tour-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 900px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 13rem 7rem 13rem 7rem;
+}
+@media desktop {
+  .tour-filters {
+    justify-content: flex-end; 
+  }
+}
+
+.tour-filter {
+  flex: 0.8 0 auto;
+}
+@media desktop {
+  .tour-filter {
+    flex: 0 0 auto;
+  }
+}
+
+.tour-filter label {
+  display: block;
+  color: #828e99;
+  font-size: 13rem;
+  font-weight: bold;
+  margin: 0 0 5rem 0;
+}
+@media desktop {
+  .tour-filter label {
+    display: inline-block;
+    margin: 0 5rem 0 13rem;
+  }
+}
+
+.tour-filter select {
+  display: block;
+  width: 100%;
+  padding: 7rem;
+}
+@media desktop {
+  .tour-filter select {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.tour-list {
+  flex: 1;
+}
+
+.tour-list-item {
+  display: flex;
+  flex-direction: column;
+  color: #2c3e50;
+  background: #fff;
+  margin: 0 7rem 13rem 7rem;
+  border-radius: 3rem;
+  box-shadow: 0 0 11rem color(#000 alpha(40%));
+}
+@media desktop {
+  .tour-list-item {
+    min-height: 180rem;
+    flex-direction: row;
+  }
+}
+
+.tour-list-item-photos,
+.tour-list-item-info,
+.tour-list-item-offer {
+  flex: 1;
+  padding: 0 7rem 7rem 7rem;
+}
+
+.tour-list-item-photos {
+  overflow: hidden;
+  position: relative;
+  height: 250rem;
+}
+@media desktop {
+  .tour-list-item-photos {
+    max-width: 220rem;
+    height: auto;
+  }
+}
+
+.tour-list-item-photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 150%;
+  transform: translate(-50%, -50%);
+}
+@media desktop {
+  .tour-list-item-photo {
+    height: 100%;
+  }
+}
+
+
+.tour-list-item-info {
+  padding: 13rem 9rem 13rem 9rem;
+}
+@media desktop {
+  .tour-list-item-info {
+    padding: 13rem;
+  }
+}
+
+.tour-list-item-name {
+  font-size: 19rem;
+  font-weight: bold;
+  margin-bottom: 7rem;
+}
+
+.tour-list-item-rating {
+  display: inline-block;
+  color: #ffc101;
+  font-size: 13rem;
+  margin-bottom: 13rem;
+}
+
+.tour-list-item-reviews {
+  display: inline-block;
+  font-size: 11rem;
+  color: #bfbfbf;
+}
+
+.tour-list-item-reviews:hover,
+.tour-list-item-reviews:focus {
+  text-decoration: underline;
+  color: #bbb;
+}
+
+.tour-list-item-desc {
+  font-size: 13rem;
+  font-style: italic;
+  margin-bottom: 13rem;
+}
+
+.tour-list-item-details {
+  font-size: 11rem;
+}
+
+.tour-list-item-detail {
+  margin-bottom: 7rem;
+}
+
+.tour-list-item-detail :first-child {
+  display: inline-block;
+  width: 140rem;
+  color: #aaa; 
+}
+
+.tour-list-item-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 9rem 13rem 9rem;
+}
+@media desktop {
+  .tour-list-item-offer {
+    padding-top: 13rem;
+    max-width: 220rem;
+  }
+}
+
+.tour-list-item-offer-pack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 13rem;
+}
+@media desktop {
+  .tour-list-item-offer-pack {
+    flex-direction: column;
+  }
+}
+
+.tour-list-item-price {
+  padding-bottom: 7rem;
+}
+@media desktop {
+  .tour-list-item-price {
+    border-bottom: solid 1rem #bfbfbf;
+  }
+}
+
+.tour-list-item-price span {
+}
+@media desktop {
+  .tour-list-item-price span {
+    text-align: right;
+  }
+}
+
+.tour-list-item-price span:first-child {
+  display: block;
+  font-size: 13rem;
+  margin-bottom: 5rem;
+}
+
+.tour-list-item-price span:nth-child(2) {
+  display: block;
+  font-size: 16rem;
+  font-weight: bold;
+}
+
+.tour-list-item-duration {
+  font-size: 19rem;
+  font-weight: bold;
+  padding: 7rem 0 8rem 0;
+}
+@media desktop {
+  .tour-list-item-duration {
+    text-align: center;
+    border-bottom: solid 1rem #bfbfbf;
+  }
+}
+
+
+.tour-list-item-dates {
+  font-size: 11rem;
+  margin-bottom: 13rem;
+}
+
+.tour-list-item-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.tour-list-item-btn {
+  color: #fcfcfc;
+  font-size: 14rem;
+  text-align: center;
+  background: #409cd1;
+  padding: 10rem 7rem 11rem 7rem;
+  transition: all 250ms;
+}
+.tour-list-item-btn:hover,
+.tour-list-item-btn:focus {
+  cursor: pointer;
+  background: color(#409cd1 lightness(40%));
+}

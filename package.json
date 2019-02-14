@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "name": "tourradar-challenge",
+  "author": "George Tsiokos <gtsiokos.fusion.design@gmail.com>",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gtsiokos/tourradar-challenge.git"
+  },
+  "engines": {
+    "node": ">= 10.15.0",
+    "npm": ">= 6.4.1"
+  },
+  "scripts": {
+    "build:webpack": "webpack --env production --config webpack.config.prod.js",
+    "development": "node server.js --env development",
+    "production": "node server.js --env production",
+    "build": "npm run build:webpack"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^0.28.7",
+    "dotenv": "^4.0.0",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.16.4",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "ignore-styles": "^5.0.1",
+    "json-loader": "^0.5.7",
+    "postcss-color-function": "^4.0.1",
+    "postcss-loader": "^2.0.8",
+    "postcss-modules-values": "^1.3.0",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.20.0",
+    "yargs": "^10.0.3"
+  },
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "axios": "^0.18.0",
+    "domready": "^1.0.8",
+    "ellipsize": "^0.1.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "query-string": "^5.0.1"
+  }
+}

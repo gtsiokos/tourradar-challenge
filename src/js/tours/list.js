@@ -113,8 +113,6 @@ class TourList {
 
   render(){
     let tours = this.getTours();
-    tours = this.getTours();
-    tours = this.getTours();
 
     return `
       <div class='tour-container'>
